@@ -1,0 +1,9 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: healthcheck
+spec:
+  containers:
+    - name: health
+      image: rkalluru/d53-healthcheck
