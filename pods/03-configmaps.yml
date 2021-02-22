@@ -12,12 +12,12 @@ data:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: sample2
+  name: sample
 spec:
   containers:
     - name: centos
       image: centos:7
       command: ["sleep", "10000"]
-      envFrom:
-        - configMapRef:
-            name: sample
+#      envFrom:
+#        - configMapRef:
+#            name: sample
